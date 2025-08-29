@@ -1,5 +1,15 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.get("/")
+def health():
+    return {"operation_code": 1}
+
+@app.post("/")
+def bfhl(payload: dict):
+    return {"is_success": True, "data": payload}
 
 from bfhl.config import settings
 from bfhl.schemas import BFHLRequest, BFHLResponse, BFHLError
