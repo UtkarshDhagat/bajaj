@@ -1,12 +1,4 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
-    "rewrites": [{ "source": "/bfhl", "destination": "/api/bfhl" }],
-    "functions": {
-      "api/*.py": {
-        "runtime": "python3.12",
-        "maxDuration": 10,
-        "memory": 128
-      }
-    }
-  }
-  
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [{ "source": "/bfhl", "destination": "/api/bfhl" }]
+}
