@@ -143,16 +143,6 @@ Set these in **Vercel → Project → Settings → Environment Variables**, and 
 pytest -q
 ```
 
----
-
-## 🔒 Security / Production Notes
-
-- Do **not** commit `.env` or other secrets. Use Vercel Env Vars.
-- Tighten `CORS` to your domains when you add a frontend.
-- Add rate limiting or auth if you expose this publicly long-term.
-
----
-
 ## 📜 License
 
 MIT 
